@@ -7,7 +7,7 @@ In this corrected script, the load_data_portion function uses np.load with mmap_
 
 Save the script as mpi_distribute_memmap.py and run it using the mpirun command:
 
-mpirun -np 2 python mpi_distribute_memmap.py
+mpirun -np 2 python mpi_distribute_npy_array.py
 
 This script adds a sha256_hash() function to generate a SHA-256 hash from a NumPy array. It then calculates the hash values for the sent and received data portions and prints them out. If the sent and received data are identical, their hash values should also be identical.
 
